@@ -11,7 +11,7 @@
     <section id="weather" aria-labelledby="weather-heading">
       <h2 id="weather-heading">Simply Weather Lookup</h2>
 
-      <form class="weatherForm">
+      <form class="weatherForm" aria-label="City weather lookup">
         <label for="city">City</label>
         <input
           class="cityInput"
@@ -19,13 +19,19 @@
           name="city"
           type="text"
           placeholder="Enter a city"
-          autocomplete="off"
+          autocomplete="address-level2"
           required
         >
         <button type="submit">Get Weather</button>
       </form>
 
-      <div class="card" role="status" aria-live="polite" style="display: none;"></div>
+      <output
+        class="card"
+        id="weather-result"
+        for="city"
+        aria-live="polite"
+        hidden
+      ></output>
     </section>
   </main>
 

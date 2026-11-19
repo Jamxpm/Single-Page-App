@@ -50,9 +50,9 @@ function displayWeatherInfo(data) {
     } = data;
 
     card.textContent = "";
-    card.style.display = "flex";
+    card.hidden = false;
 
-    const cityDisplay = document.createElement("h1");
+    const cityDisplay = document.createElement("h3");
     const tempDisplay = document.createElement("p");
     const humidityDisplay = document.createElement("p");
     const descDisplay = document.createElement("p");
@@ -81,7 +81,7 @@ function displayError(message) {
     errorDisplay.classList.add("errorDisplay");
 
     card.textContent = "";
-    card.style.display = "flex";
+    card.hidden = false;
     card.appendChild(errorDisplay);
 }
 
