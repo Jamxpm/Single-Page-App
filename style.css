@@ -203,8 +203,14 @@ section:not(.hero) > h2 {
 }
 
 #weather {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(9, 10, 11, 0.78), rgba(9, 10, 11, 0.78)),
+    url("Weather.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--paper);
-  background: var(--ink);
 }
 
 #weather > h2 {
