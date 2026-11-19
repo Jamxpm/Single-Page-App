@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Borikén | Discover Puerto Rico</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Explore Borikén 🇵🇷</h1>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#weather">Weather</a>
+      <a href="#explore">Explore</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Discover Puerto Rico</h2>
+      <p>Explore the beauty, culture, and history
+         of the Island of Enchantment.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Puerto Rico</h2>
+      <div id="country-info" aria-live="polite">
+        <p>Loading country information...</p>
+      </div>
+    </section>
+
+    <section id="weather">
+      <h2>Weather in Puerto Rico</h2>
+      <label for="city">Choose a city:</label>
+      <select id="city">
+        <option value="san-juan">San Juan</option>
+        <option value="ponce">Ponce</option>
+        <option value="mayaguez">Mayagüez</option>
+      </select>
+      <div id="weather-info" aria-live="polite">
+        <p>Loading weather...</p>
+      </div>
+    </section>
+
+    <section id="explore">
+      <h2>Explore the Island</h2>
+      <div id="places" class="places-grid">
+        <p>Loading attractions...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Explore Borikén | API Web Application</p>
+  </footer>
+</body>
+</html>
